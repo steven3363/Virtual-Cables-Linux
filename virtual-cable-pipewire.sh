@@ -8,7 +8,7 @@ pw-link VirtualSpeaker:monitor_FL VirtualMic:input_FL
 pw-link VirtualSpeaker:monitor_FR VirtualMic:input_FR
 
 #needs pulseaudio-utils 
-#Add loopback to hear 
+#Add loopback to hear comment out if you wish to disable
 
 pactl load-module module-loopback sink_name=LoopbackSync
 
