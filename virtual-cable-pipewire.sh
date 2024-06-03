@@ -10,8 +10,10 @@ pw-link VirtualSpeaker:monitor_FR VirtualMic:input_FR
 #needs pulseaudio-utils 
 #Add loopback to hear 
 
-pactl load-module module-loopback latency_msec=1
+pactl load-module module-loopback sink_name=LoopbackSync
 
 #configure loop back in pulseaudio manager. This will be needed to do each time sorry. (Once you setup it should remember)
+# use this comand to reset  
+# systemctl --user restart pipewire pipewire-pulse
 
 #from https://luke.hsiao.dev/blog/pipewire-virtual-microphone/
