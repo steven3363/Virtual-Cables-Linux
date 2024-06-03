@@ -10,7 +10,7 @@ pw-link VirtualSpeaker:monitor_FR VirtualMic:input_FR
 #needs pulseaudio-utils 
 #Add loopback to hear comment out if you wish to disable
 
-pactl load-module module-loopback sink_name=LoopbackSync
+pactl load-module module-loopback sink_name="LoopbackSync" source="VirtualSpeaker.monitor"
 
 #configure loop back in pulseaudio manager. This will be needed to do each time sorry. (Once you setup it should remember)
 # use this comand to reset  
