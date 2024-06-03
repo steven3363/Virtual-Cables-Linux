@@ -12,9 +12,9 @@
 # Ubuntu or most apt based systems "sudo apt install pavucontrol pulseaudio-utils" #please tell me if this wrong I don't have apt to test sorry.
 
 
-Echo "You should reset Pipewire to last defaults  before 'running programs may beed to be restarted. " 
-Echo "systemctl --user restart pipewire pipewire-pulse"
-Echo " "
+echo "You should reset Pipewire to last defaults  before 'running programs may need to be restarted. OBS will need this. Best to run when no apps are running " 
+
+echo " "
 
 echo "VirtualSpeaker"
 # Create a virtual sink that can be set as a monitor in OBS
