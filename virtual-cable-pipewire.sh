@@ -8,6 +8,10 @@ pw-link VirtualSpeaker:monitor_FL VirtualMic:input_FL
 pw-link VirtualSpeaker:monitor_FR VirtualMic:input_FR
 
 #needs pulseaudio-utils 
+#Add loopback to hear 
 
+pactl load-module module-loopback latency_msec=1
+
+#configure loop back in pulseaudio manager. This will be needed to do each time sorry. (Once you setup it should remember)
 
 #from https://luke.hsiao.dev/blog/pipewire-virtual-microphone/
