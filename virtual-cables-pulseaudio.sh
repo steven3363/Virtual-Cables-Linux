@@ -20,6 +20,7 @@ pactl load-module module-remap-source master=virtmic.monitor source_name=virtmic
 
 #Add loopback to hear 
 
-pactl load-module module-loopback latency_msec=1
+pactl load-module module-loopback latency_msec=1 source="Virtual_Speaker.monitor"
 
-#configure loop back in pulseaudio manager. This will be needed to do each time sorry. (Once you setup it should remember)
+#To set where to playback the sound use a manager like Pulseadio volume control. This will be needed to do each time sorry. 
+
