@@ -9,6 +9,13 @@ For the pipewire version I found that I needed to install 'pulseaudio-utils'
 fedora "sudo dnf install pulseaudio-utils"
  Ubuntu or most apt based systems "sudo apt install pulseaudio-utils"
  
-also 'PulseAudio Volume Control' (assuming you have pulseadio installed.
+also 'PulseAudio Volume Control'
  fedora "sudo dnf install pavucontrol"
  Ubuntu or most apt based systems "sudo apt install pavucontrol"
+
+ Please only run this script when no sound devices are in use. I have found that the linking doesn't work when the device is in use. 
+
+For pipewire ti reset use the following command.
+<code>systemctl --user restart pipewire pipewire-pulse</code>
+
+
